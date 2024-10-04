@@ -147,7 +147,7 @@ let addAnswer = async (answer) => {
     }
 }
 
-async function leaveChannel() {
+let leaveChannel = aysnc () {
     await channel.leave();
     await client.logout();
 }
