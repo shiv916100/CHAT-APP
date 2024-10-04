@@ -42,7 +42,7 @@ let init = async() => {
     channel = client.createChannel('roomID')
     await channel.join()
  
-    channel.on('MemberJoined', handleUserJoind)
+    channel.on('MemberJoined', handleUserJoined)
     channel.on('MemberLeft', handleUserLeft)
 
     client.on('MessageFromPeer', handleMessageFromPeer)
